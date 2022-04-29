@@ -12,11 +12,11 @@ def retDic(filename):
   sec = 0
   seconds = []
   dicVideo1 = {}
-  frameRate = 30 #capture 30 image in each 1 sec
+  frameRate = 0.03 #capture 30 image in each 1 sec
   while(cap.isOpened()):
       sec = sec + frameRate
       sec = round(sec,2)
-      cap.set(cv2.CAP_PROP_POS_MSEC,sec*1000)
+      cap.set(cv2.CAP_PROP_POS_MSEC,framerate)
       ret, img = cap.read()
       if ret:
           img = imutils.resize(img, width=320)
