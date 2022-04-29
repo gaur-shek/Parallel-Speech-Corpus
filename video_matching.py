@@ -12,7 +12,7 @@ def retDic(filename):
   sec = 0
   seconds = []
   dicVideo1 = {}
-  frameRate = 1 #capture image in each 1 sec
+  frameRate = 0.03 #capture image in each 1 sec
   while(cap.isOpened()):
       sec = sec + frameRate
       sec = round(sec,2)
