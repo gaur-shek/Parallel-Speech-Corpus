@@ -16,7 +16,7 @@ def retDic(filename):
   while(cap.isOpened()):
       sec = sec + frameRate
       sec = round(sec,2)
-      cap.set(cv2.CAP_PROP_POS_MSEC,framerate)
+      cap.set(cv2.CAP_PROP_POS_MSEC,frameRate)
       ret, img = cap.read()
       if ret:
           img = imutils.resize(img, width=320)
