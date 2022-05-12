@@ -37,7 +37,7 @@ def seg_chunk(pathChunks,csvpath,mediawav,idA):
     chunkizeSeg(pathChunks, csvpath, mediawav, idA)
 
 
-idA = "sponge"
+idA = "Pokemon"
 
 newpath = sys.argv[1]
 filenameDub = sys.argv[2]
