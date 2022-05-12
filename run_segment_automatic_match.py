@@ -55,7 +55,7 @@ STTI(ARcsv, transPathAR, pathChunksAR, langDub)
 STTI(ENcsv, transPathEN, pathChunksEN, langOrg) 
 print("Translating the original audio to the dubbed audio")
 try:
-	trans2Trgt(transPathEN,newtransPathAR,langDub) 
+	trans2Trgt(transPathEN,newtransPathAR,"hi") 
 except:
 	print("failed to translate")
 print("Similarity between Original_translated & Dubbed ")
