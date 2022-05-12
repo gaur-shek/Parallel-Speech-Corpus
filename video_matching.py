@@ -12,7 +12,7 @@ def retDic(filename):
   sec = 0
   seconds = []
   dicVideo1 = {}
-  frameRate = 0.2 #capture image in each 1 sec
+  frameRate = 1 #capture image in each 1 sec
   while(cap.isOpened()):
       sec = sec + frameRate
       sec = round(sec,2)
@@ -53,7 +53,7 @@ def retCorrupt_Consecu_frames(dicVid1,dicVid2,LenVid1,LenVid2,secVid1, secVid2):
         y = list(dicVid1)[-1]
         consecutive_frames_end[y] = dicVid1[y]
         break
-      while j <= 16: #and s+j <= LenVid2:
+      while j <= 16 and s+j <= LenVid2:
         z = ssim(dicVid1[s], dicVid2[s+j])
         if z >= 0.75:
           break 
