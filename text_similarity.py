@@ -34,7 +34,6 @@ def sim_dub_trans_org(chunksOrg_Trans, chunksDub, sim_matrix_txt):
     Matrix = [[-1 for x in range(c)] for y in range(r)] 
     w = -1
     h = 0
-    sim = TextSimilarity()
     try:
         for i in od_no:
             w = w + 1
