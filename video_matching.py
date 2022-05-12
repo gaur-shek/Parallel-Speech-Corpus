@@ -68,7 +68,7 @@ def retCorrupt_Consecu_frames(dicVid1,dicVid2,LenVid1,LenVid2,secVid1, secVid2):
         y = list(dicVid2)[-1]
         consecutive_frames_end[y] = dicVid2[y]
         break
-      while j <= 16: #and s+j <= LenVid1:
+      while j <= 16 and s+j <= LenVid1:
         z = ssim(dicVid1[s+j], dicVid2[s])
         if z >= 0.75:
           break 
