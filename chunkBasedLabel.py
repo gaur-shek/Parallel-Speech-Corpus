@@ -15,7 +15,7 @@ def chunkizeSeg(pathChunks, pathCSV, pathwav, idseries):
     startSec = kj['start']
     endSec = kj['stop']
 
-    k = 1
+    
      
     # Time to miliseconds
     for i in range(len(kj)):
