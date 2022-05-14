@@ -3,7 +3,7 @@ import pandas as pd
 
 
 
-def matchSegments(encsv, hicsv, csvresult, txtsim): # two csv files tr ar return csv file for both 
+def matchSegments(encsv, hicsv, csvresult, txtsim): 
     sumDurationHI = 0
     sumDurationEN = 0
     sumSegmentsHI  = 0
