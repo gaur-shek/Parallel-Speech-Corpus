@@ -29,7 +29,7 @@ def STTI(csvpath, transPath, chunksDub, langCode):
                 # correctly. 
                 #r.adjust_for_ambient_noise(source) 
                 audio_listened = r.listen(source) 
-                rec = r.recognize_google(audio_listened, language= langCode ) #tr ar-x-levant
+                rec = r.recognize_google(audio_listened, language= langCode ) 
                 fh.write(rec+". ") 
                 if rec == "":
                     
