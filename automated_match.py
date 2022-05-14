@@ -173,10 +173,7 @@ def matchSegments(encsv, hicsv, csvresult, txtsim):
                             simPr.append(str(array2D[RX-1][zi-1]))
                         ziD = ';'.join(simPr)
                         LstSim.append(ziD)
-						#Y = str(ar['Index1'][j])
-						#l1[X]= Y
-						#print(X + " " + s)
-						#print(s)
+						
 				
 					
                 j = j + 1 
