@@ -249,7 +249,7 @@ def matchSegments(encsv, hicsv, csvresult, txtsim):
                           bb = False  
                     if bb == False:
                         break
-                    l2_hi_en[ar['Index1'][j]]= s
+                    l2_hi_en[hi['Index1'][j]]= s
                     #l1[X]= Y
                     X = int(hi['Index1'][j])
                     LstIndHI.append(X)
