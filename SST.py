@@ -18,16 +18,13 @@ def STTI(csvpath, transPath, chunksDub, langCode):
         fh = open(transPath+kma+".txt", "w+", encoding = "utf-8")   
         
         file = chunk 
-        #print(file)
-        # create a speech recognition object 
+        
         r = sr.Recognizer() 
         try: 
-            # recognize the chunk 
+             
             with sr.AudioFile(file) as source: 
                 
-                # remove this if it is not working 
-                # correctly. 
-                #r.adjust_for_ambient_noise(source) 
+                 
                 audio_listened = r.listen(source) 
                 rec = r.recognize_google(audio_listened, language= langCode ) 
                 fh.write(rec+". ") 
@@ -46,7 +43,7 @@ def STTI(csvpath, transPath, chunksDub, langCode):
 
                 
         except:
-            #print("failed to recognize speech ")
+            
             IsSR[int(result)] = "0"
             os.remove(file)
             fh.close()
@@ -59,8 +56,7 @@ def STTI(csvpath, transPath, chunksDub, langCode):
     inzCou2 = []
     for i in izR:
         izR2.append(izR[i])
-    #for i in inzCou:
-     #   inzCou2.append(inzCou[i])
+    
     s = 0 
     for i in izR2:
         if i == "1":
