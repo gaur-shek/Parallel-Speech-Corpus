@@ -10,7 +10,6 @@ import glob
 
 
 def chunkizeSeg(pathChunks, pathCSV, pathwav, idseries):
-    #splitAudio(file_nameT)
     kj = pd.read_csv(pathCSV)
     startSec = kj['start']
     endSec = kj['stop']
